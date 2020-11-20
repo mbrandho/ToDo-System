@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="441.0" prefWidth="787.0">
+            <children>
+                <ListView fx:id="toDo" prefHeight="500.0" prefWidth="300.0" />
+                <TextField fx:id="toDoName" layoutX="344.0" layoutY="39.0" promptText="Name" />
+                <TextField fx:id="toDoPriority" layoutX="544.0" layoutY="39.0" promptText="Priorität" />
+                <TextArea fx:id="toDoDescription" layoutX="344.0" layoutY="100.0" prefHeight="97.0" prefWidth="331.0" promptText="Beschreibung" />
+                <TextField fx:id="toDoStatus" layoutX="344.0" layoutY="227.0" promptText="Status" />
+                <ListView fx:id="agent" layoutX="344.0" layoutY="300.0" prefHeight="200.0" prefWidth="200.0" />
+                <TextField fx:id="agentName" layoutX="586.0" layoutY="300.0" promptText="Bearbeiter_Name" />
+                <TextField fx:id="agentAdrress" layoutX="586.0" layoutY="345.0" promptText="Bearbeiter_Adresse" />
+                <TextField fx:id="agentToDoHours" layoutX="586.0" layoutY="388.0" promptText="Bearbeiter_Stunden_Projekt" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
