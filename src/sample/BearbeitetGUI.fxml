@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BearbeitetGUI">
+   <children>
+      <TextField disable="true" layoutX="14.0" layoutY="14.0" promptText="ID " AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <TextField layoutX="14.0" layoutY="47.0" promptText="Bearb
+      eiter-ID " AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0" />
+      <TextField layoutX="14.0" layoutY="83.0" promptText="ToDo-ID " AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="85.0" />
+      <TextArea layoutX="14.0" layoutY="122.0" prefHeight="228.0" prefWidth="572.0" promptText="Arbeitszeit " AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="123.0" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="OK " AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+
+   </children>
+</AnchorPane>
