@@ -39,22 +39,22 @@ public class Status {
         return name;
     }
 
-    public static ObservableList<Status> getList()  {
-        ObservableList<Status>list = FXCollections.observableArrayList();
+    public static ObservableList<Status> getList() {
+        ObservableList<Status> list = FXCollections.observableArrayList();
 
-        AbstractDatabase conn = new MySQLConnector("d0345761", "5AHEL2021", "rathgeb.at",3306,"d0345761");
+        AbstractDatabase conn = new MySQLConnector("d0345761", Constants.dbPw, "rathgeb.at", 3306, "d0345761");
 
         PreparedStatement statement = null;
         try {
-            statement = conn.getConnection().prepareStatement("SELECT * from gr2_status");
+            statement = conn.getConnection().prepareStatement("SELECT * from gr6_status");
 
 
-        ResultSet results = statement.executeQuery();
+            ResultSet results = statement.executeQuery();
 
-        while (results.next()){
-            Status tmp = new Status(results.getInt("status_id"),results.getString("name"));
-            list.add(tmp);
-        }
+            while (results.next()) {
+                Status tmp = new Status(results.getInt("status_id"), results.getString("name"));
+                list.add(tmp);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

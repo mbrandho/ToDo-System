@@ -14,7 +14,6 @@ public class PriorityController {
     }
 
 
-
     public void itemSelected(MouseEvent mouseEvent) {
         Priority p = priorityListView.getSelectionModel().getSelectedItem();
 

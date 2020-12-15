@@ -8,7 +8,7 @@
    <children>
       <TextField fx:id="nameTextfield" layoutX="324.0" layoutY="20.0" prefHeight="25.0" prefWidth="261.0" promptText="Name " AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0" />
       <Button layoutX="505.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveClicked" prefHeight="25.0" prefWidth="74.0" text="Speichern" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="21.0" />
-      <ListView fx:id="statusListView" onMouseClicked="#itemSelected" prefHeight="357.0" prefWidth="253.0" />
+      <ListView fx:id="listView" onMouseClicked="#itemSelected" prefHeight="357.0" prefWidth="253.0" />
       <Button layoutX="418.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelClicked" text="Abbrechen" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="418.0" AnchorPane.rightAnchor="108.0" />
       <Button layoutX="20.0" layoutY="361.0" mnemonicParsing="false" onAction="#newClicked" prefHeight="25.0" prefWidth="46.0" text="Neu" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="534.0" />
       <Button layoutX="69.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteClicked" prefHeight="25.0" prefWidth="74.0" text="Löschen" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="457.0" />
