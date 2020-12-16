@@ -6,11 +6,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="325.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StatusController">
+<AnchorPane prefHeight="325.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatusController">
    <children>
       <Label layoutX="290.0" layoutY="23.0" text="Status" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="23.0" />
-      <TextField fx:id="nameTextField" la
-                 youtX="337.0" layoutY="19.0" prefHeight="25.0" prefWidth="319.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="19.0" />
+      <TextField fx:id="nameTextField" layoutX="337.0" layoutY="19.0" prefHeight="25.0" prefWidth="319.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="19.0" />
       <Button layoutX="501.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveClicked" text="Speichern" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
       <Button layoutX="413.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelClicked" text="Abbrechen" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="97.0" />
       <ListView fx:id="statusListView" onMouseClicked="#itemSelected" prefHeight="280.0" prefWidth="267.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />

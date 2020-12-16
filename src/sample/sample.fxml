@@ -1,34 +1,31 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-                  <Menu mnemonicParsing="false" text="Status">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#onStatusClicked" text="anzeigen/bearbeiten " />
+                        <MenuItem mnemonicParsing="false" text="Close" />
                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Priorität ">
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#onPriorityClicked" text="anzeigen/bearbeiten " />
+                        <Menu mnemonicParsing="false" text="Status">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="anzeigen/bearbeiten " />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Priorität ">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="anzeigen/bearbeiten " />
+                            </items>
+                        </Menu>
                     </items>
-                  </Menu>
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </children>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
 </AnchorPane>

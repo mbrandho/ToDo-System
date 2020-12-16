@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="296.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PriorityController">
+<AnchorPane prefHeight="296.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatusController">
    <children>
       <Label layoutX="295.0" layoutY="23.0" text="Priorität" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="23.0" />
       <TextField fx:id="nameTextField" layoutX="352.0" layoutY="19.0" prefHeight="25.0" prefWidth="380.0" AnchorPane.leftAnchor="352.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="19.0" />

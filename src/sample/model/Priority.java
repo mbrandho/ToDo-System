@@ -1,5 +1,5 @@
 package sample.model;
-
+import static sample.model.Constants.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import sample.model.db.AbstractDatabase;
@@ -16,6 +16,10 @@ public class Priority {
     public Priority(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Priority() {
+
     }
 
     public int getId() {
@@ -42,10 +46,10 @@ public class Priority {
     public static ObservableList<Priority> getList() {
         ObservableList<Priority> list = FXCollections.observableArrayList();
 
-        AbstractDatabase conn = new MySQLConnector("d0345761", "5AHEL2021", "rathgeb.at", 3306, "d0345761");
+        AbstractDatabase conn = new MySQLConnector(user, dbPw, host, port, dbName);
 
         try {
-            PreparedStatement statement = conn.getConnection().prepareStatement("SELECT * FROM gr2_priority");
+            PreparedStatement statement = conn.getConnection().prepareStatement("SELECT * FROM gr7_priority");
             ResultSet results = statement.executeQuery();
 
             while(results.next()) {

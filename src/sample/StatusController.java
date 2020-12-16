@@ -11,6 +11,8 @@ import sample.model.db.MySQLConnector;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import static sample.model.Constants.*;
+
 public class StatusController {
 
 
@@ -18,7 +20,7 @@ public class StatusController {
     public ListView<Status> listView;
     public Status selectedItem = null;
     PreparedStatement statement = null;
-    AbstractDatabase conn = new MySQLConnector("d0345761", "5AHEL2021", "rathgeb.at", 3306, "d0345761");
+    AbstractDatabase conn = new MySQLConnector(user, dbPw, host, port, dbName);
 
 
     public void initialize() {
@@ -39,7 +41,7 @@ public class StatusController {
             newClicked(actionEvent);
         } else {
             try {
-                statement = conn.getConnection().prepareStatement("UPDATE `gr2_status` SET `name` = '" + nameTextfield.getText() + "' WHERE `gr2_status`.`status_id` = '" + selectedItem.getId() + "'");
+                statement = conn.getConnection().prepareStatement("UPDATE `gr7_status` SET `name` = '" + nameTextfield.getText() + "' WHERE `gr7_status`.`status_id` = '" + selectedItem.getId() + "'");
                 statement.execute();
                 listView.setItems(Status.getList());
             } catch (SQLException e) {
@@ -50,7 +52,7 @@ public class StatusController {
 
     public void newClicked(ActionEvent actionEvent) {
         try {
-            statement = conn.getConnection().prepareStatement("INSERT INTO gr2_status (name) VALUES ('" + nameTextfield.getText() + "')");
+            statement = conn.getConnection().prepareStatement("INSERT INTO gr7_status (name) VALUES ('" + nameTextfield.getText() + "')");
             statement.execute();
             listView.setItems(Status.getList());
         } catch (SQLException e) {
@@ -63,7 +65,7 @@ public class StatusController {
 
     public void deleteClicked(ActionEvent actionEvent) {
         try {
-            statement = conn.getConnection().prepareStatement("DELETE from gr2_status WHERE name ='" + selectedItem.getName() + "'");
+            statement = conn.getConnection().prepareStatement("DELETE from gr7_status WHERE name ='" + selectedItem.getName() + "'");
             statement.executeUpdate();
             listView.setItems(Status.getList());
         } catch (SQLException e) {

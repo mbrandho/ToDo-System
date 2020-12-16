@@ -18,6 +18,10 @@ public class Status {
         this.name = name;
     }
 
+    public Status() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -42,11 +46,11 @@ public class Status {
     public static ObservableList<Status> getList() {
         ObservableList<Status> list = FXCollections.observableArrayList();
 
-        AbstractDatabase conn = new MySQLConnector("d0345761", Constants.dbPw, "rathgeb.at", 3306, "d0345761");
+        AbstractDatabase conn = new MySQLConnector(Constants.user, Constants.dbPw, Constants.host, Constants.port, Constants.dbName);
 
         PreparedStatement statement = null;
         try {
-            statement = conn.getConnection().prepareStatement("SELECT * from gr6_status");
+            statement = conn.getConnection().prepareStatement("SELECT * from gr7_status");
 
 
             ResultSet results = statement.executeQuery();
